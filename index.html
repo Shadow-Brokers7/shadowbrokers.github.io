@@ -1,120 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Shadow Brokers: Especialistas en programación, ciberseguridad y consultoría tecnológica.">
-    <meta name="keywords" content="programación, ciberseguridad, tecnología, desarrollo de software">
-    <meta name="author" content="Shadow Brokers">
-    <title>Shadow Brokers</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <!-- icon -->
-    <link rel="icon" href="shadow-logo.webp">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #1a1a1a;
-            color: #d1d1d1;
-        }
-    </style>
-</head>
-
-<body>
-    <header class="bg-gray-900 bg-opacity-75 fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <div class="text-2xl font-bold text-white">Shadow Brokers
-                <img src="shadow-logo.webp" alt="logo" class="w-8 h-8">
-            </div>
-            <nav class="space-x-4">
-                <a href="#home" class="text-white hover:text-gray-400">Inicio</a>
-                <a href="#services" class="text-white hover:text-gray-400">Servicios</a>
-                <a href="#projects" class="text-white hover:text-gray-400">Proyectos</a>
-                <a href="#about" class="text-white hover:text-gray-400">Sobre Nosotros</a>
-                <a href="#team" class="text-white hover:text-gray-400">Nuestro Equipo</a>
-                <a href="#contact" class="text-white hover:text-gray-400">Contacto</a>
-            </nav>
-            <button id="theme-toggle" class="p-2 rounded-full bg-gray-700 hover:bg-gray-600">🌙</button>
-        </div>
-    </header>
-    <main class="pt-16">
-        <section id="home" class="h-screen flex items-center justify-center bg-gray-800 text-center relative">
-            <div class="stars">
-                <!-- Estrellas generadas por JavaScript -->
-            </div>
-            <div class="galaxies">
-                <!-- Galaxias generadas por JavaScript -->
-            </div>
-
-            <div>
-                <h1 class="text-5xl font-bold text-white mb-4">Bienvenido a Shadow Brokers</h1>
-                <p class="text-lg text-gray-400">Especialistas en programación, ciberseguridad y consultoría
-                    tecnológica.</p>
-                <a href="#services"
-                    class="mt-6 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Descubre
-                    más</a>
-            </div>
-        </section>
-        <section id="services" class="py-16 bg-gray-900 text-center">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-white mb-8">Nuestros Servicios</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Desarrollo de Software</h3>
-                        <p class="text-gray-400">Soluciones personalizadas adaptadas a tus necesidades.</p>
-                    </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Ciberseguridad</h3>
-                        <p class="text-gray-400">Protege tu negocio de amenazas digitales.</p>
-                    </div>
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Consultoría Tecnológica</h3>
-                        <p class="text-gray-400">Aprovecha al máximo las tecnologías emergentes.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="projects" class="py-16 bg-gray-800 text-center">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold text-white mb-8">Proyectos Destacados</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Proyecto 1</h3>
-                        <p class="text-gray-400">Descripción breve del proyecto.</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Proyecto 2</h3>
-                        <p class="text-gray-400">Descripción breve del proyecto.</p>
-                    </div>
-                    <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-white mb-4">Proyecto 3</h3>
-                        <p class="text-gray-400">Descripción breve del proyecto.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="py-16 bg-gray-900 text-center text-white">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-8">Contáctanos</h2>
-                <form class="space-y-4 max-w-lg mx-auto">
-                    <input type="text" placeholder="Nombre" class="w-full p-3 rounded bg-gray-800 text-white">
-                    <input type="email" placeholder="Correo Electrónico"
-                        class="w-full p-3 rounded bg-gray-800 text-white">
-                    <textarea placeholder="Mensaje" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
-                    <button
-                        class="w-full bg-blue-500 hover:bg-blue-600 p-3 rounded text-white font-semibold">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-gray-800 text-gray-400 py-4 text-center">
-        <p>Hecho con ❤️ por <a href="https://github.com/shadowbrokers" target="_blank"
-                class="text-blue-500">shadowbrokers</a></p>
-        <p>&copy; 2024 Shadow Brokers. Todos los derechos reservados.</p>
-    </footer>
-    <script src="javascript.js"></script>
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
