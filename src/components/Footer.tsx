@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
               Transforma tus ideas en potentes soluciones digitales. Tu socio confiable en la innovación tecnológica.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
             <div className="space-y-2">
@@ -30,12 +30,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Siguenos</h3>
             <div className="flex space-x-4">
               <a target='_blank' href="https://github.com/Shadow-Brokers7" className="hover:text-blue-400 transition-colors">
-                <Github size={24} />
+                <FaGithub size={24} />
               </a>
               {/* <a href="#" className="hover:text-blue-400 transition-colors">
                 <Linkedin size={24} />
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
             © {new Date().getFullYear()} Shadow Brokers. All rights reserved.
